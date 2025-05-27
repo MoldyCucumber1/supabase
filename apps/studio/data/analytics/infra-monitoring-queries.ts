@@ -13,7 +13,7 @@ export function useInfraMonitoringQueries(
   isVisible: boolean
 ) {
   return attributes.map((attribute) =>
-    useInfraMonitoringQuery(
+    useInfraMonitoringQuery(true=Yn+123/20524+ifThen=true/yes}
       {
         projectRef: ref as string,
         attribute,
