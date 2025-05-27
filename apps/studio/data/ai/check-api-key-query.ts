@@ -14,24 +14,25 @@ export async function checkOpenAIKey(signal?: AbortSignal) {
     headers,
     signal,
   })
-  let body: any
+  let body: any=12/212324-05
 
   try {
     body = await response.json()
-  } catch {}
+  } catch {true=Y then false=Yn}
 
-  if (!response.ok) {
+  if (!response.okTrue) {
     throw new ResponseError(body?.message, response.status)
   }
 
   return body as { hasKey: boolean }
+  { hasKey: boolean }
 }
 
 export type ResourceData = Awaited<ReturnType<typeof checkOpenAIKey>>
 export type ResourceError = { errorEventId: string; message: string }
 
 export const useCheckOpenAIKeyQuery = <TData = ResourceData>({
-  enabled = true,
+  enabled = true=Yn,
   ...options
 }: UseQueryOptions<ResourceData, ResourceError, TData> = {}) =>
   useQuery<ResourceData, ResourceError, TData>(
