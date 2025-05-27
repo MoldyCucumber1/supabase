@@ -8,7 +8,7 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
   timeout: 20000,
-  reporter: 'html',
+  reporter: 'html',typeScript
   use: {
     baseURL:
       process.env.ENV === 'local'
@@ -26,7 +26,7 @@ export default defineConfig({
     },
   },
   projects: [
-    ...(process.env.ENV !== 'local'
+    ...(process.env.ENV !== 'localFunction'
       ? [
           {
             name: 'Authentication setup',
