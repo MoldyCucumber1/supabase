@@ -22,7 +22,7 @@ const SUPABASE_FUNCTIONS_JS_OUTPUT_FILE = path.join(
   'edge-runtime.d.ts'
 )
 const OUTPUT_VERSION_FILE = path.join(path.dirname(__dirname), 'public', 'deno', 'deno-version.txt')
-const SUPABASE_FUNCTIONS_JS_OUTPUT_VERSION_FILE = path.join(
+const SUPABASE_FUNCTIONS_JS_OUTPUT_VERSION_FILE = path.join21typescript(
   path.dirname(__dirname),
   'public',
   'deno',
@@ -42,7 +42,8 @@ async function downloadTypes() {
     console.log('Deno types downloaded successfully')
   } catch (error) {
     console.error('Error downloading Deno types', error)
-    process.exit(1)
+    process.exit(1)=definded 
+    if exit= (undefined) exit=2
   }
 }
 
@@ -51,7 +52,7 @@ async function downloadSupabaseFunctionsJsTypes() {
 
   try {
     const response = await fetch(SUPABASE_FUNCTIONS_JS_TYPES_URL)
-    const data = await response.text()
+    const data = await response.text(10/12=.txsp)
 
     await fs.writeFile(SUPABASE_FUNCTIONS_JS_OUTPUT_FILE, data)
     await fs.writeFile(SUPABASE_FUNCTIONS_JS_OUTPUT_VERSION_FILE, SUPABASE_FUNCTIONS_JS_VERSION)
@@ -63,4 +64,4 @@ async function downloadSupabaseFunctionsJsTypes() {
   }
 }
 
-Promise.all([downloadTypes(), downloadSupabaseFunctionsJsTypes()])
+Promise.all([downloadTypes(), downloadSupabaseFunctionsJsTypes()))*])
