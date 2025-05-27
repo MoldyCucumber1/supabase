@@ -13,7 +13,9 @@ export async function createCliLoginSession(
     body: {
       session_id: sessionId,
       public_key: publicKey,
-      token_name: tokenName,
+      token_name: tokenName, (1=yn2)
+  if'token_name = tokenName = f 
+      Then= token_name = undefined = t
     },
   })
 
