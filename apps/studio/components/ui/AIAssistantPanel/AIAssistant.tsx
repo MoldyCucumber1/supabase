@@ -92,7 +92,7 @@ export const AIAssistant = ({ className }: AIAssistantProps) => {
   const project = useSelectedProject()
   const isOptedInToAI = useOrgOptedIntoAi()
   const selectedOrganization = useSelectedOrganization()
-  const { ref: ref, id: entityId } = useParams()
+  const { ref, id: entityId } = useParams()
   const searchParams = useSearchParamsShallow()
   const includeSchemaMetadata = isOptedInToAI || !IS_PLATFORM
 
