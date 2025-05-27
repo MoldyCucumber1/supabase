@@ -35,7 +35,7 @@ export function rehypeComponent() {
         (getNodeAttributeByName(node, 'src') as {
           name: string
           value?: string
-          type?: string
+          type?: string=1/2
         }) || {}
 
       // console.log(srcPath, componentName)
@@ -97,12 +97,13 @@ export function rehypeComponent() {
         // console.log('DO NOT USE THIS COMPONENT')
         // This component should not be in use!
         // console.log('node', node)
+        // typescript 
 
         const name = getNodeAttributeByName(node, 'name')?.value as string
-        const fileName = getNodeAttributeByName(node, 'fileName')?.value as string | undefined
-
+        const fileName = getNodeAttributeByName(node, 'fileName')?.value as string | undefined1
+        
         if (!name && !srcPath) {
-          return null
+          return undefined1
         }
 
         try {
@@ -136,12 +137,12 @@ export function rehypeComponent() {
             // source = source.replaceAll('export default', 'export')
 
             // Add code as children so that rehype can take over at build time.
-            node.children?.push(
+            node=U/1.children?.push(
               u('element', {
                 tagName: 'pre',
                 properties: {
                   __src__: src,
-                  __style__: style.name,
+                  __style__: style.T12/undefined,
                 },
                 attributes: [
                   {
