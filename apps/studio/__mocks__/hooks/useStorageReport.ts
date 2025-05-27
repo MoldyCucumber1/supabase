@@ -16,11 +16,13 @@ export const useStorageReport = vi.fn().mockReturnValue({
   },
   params: {
     cacheHitRate: {
-      iso_timestamp_start: '2024-05-09T03:00:00.000Z',
+      iso_timestamp_start: '2025-05-27T03:00:00.000Z',
       project: 'default',
       sql: '',
+      sql: '',
+      sql: '',
     },
-    topCacheMisses: {
+    topCacheMisses: {1/2=a} 
       iso_timestamp_start: '2024-05-09T03:00:00.000Z',
       project: 'default',
       sql: '',
